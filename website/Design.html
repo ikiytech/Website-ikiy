@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Responsive Design - Artikel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-red-800">Home</a>
+            <div>
+                <a href="/" class="text-gray-600 hover:text-red-800 mx-4">Home</a>
+                <a href="#articles" class="text-gray-600 hover:text-red-800 mx-4">Articles</a>
+                <a href="#contact" class="text-gray-600 hover:text-red-800 mx-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <main class="container mx-auto mt-8 p-4 bg-white shadow-md rounded-lg">
+        <article>
+            <h1 class="text-3xl font-bold text-red-800 mb-4">Introduction to Responsive Design</h1>
+            <img src="/images/Desain2.jpg" alt="Responsive Design" class="w-full h-64 object-cover rounded mb-6">
+            <p class="text-lg leading-relaxed mb-4">
+                Responsive design is a method of web design that ensures that web pages render well on a variety of devices and window or screen sizes. This article is aimed at those who want to understand the basics of responsive design and how to implement it in their projects.
+            </p>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Why Responsive Design?</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                With the increasing number of devices with varying screen sizes, it has become essential for websites to be adaptable. Responsive design ensures a good user experience across all devices, whether it's a desktop, tablet, or smartphone.
+            </p>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">How It Works</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Responsive design uses CSS media queries to adjust the layout based on the screen size. It involves flexible grid layouts, images, and an overall fluid approach to design.
+            </p>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Basic Example</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Here’s a basic example of a responsive layout using CSS:
+            </p>
+            <pre class="bg-gray-900 text-white p-4 rounded mb-6">
+<code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 100%; padding: 20px; }
+        .box { background: #ddd; margin: 10px; padding: 20px; }
+        
+        @media (min-width: 600px) {
+            .box { width: 48%; float: left; }
+        }
+
+        @media (min-width: 900px) {
+            .box { width: 30%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>
+</code>
+            </pre>
+            <p class="text-lg leading-relaxed mb-4">
+                This example shows how the boxes adjust based on the screen size, utilizing media queries to provide a responsive layout.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+                Understanding and implementing responsive design is crucial for modern web development to ensure accessibility and a seamless user experience across different devices.
+            </p>
+        </article>
+        <a href="/" class="text-red-800 font-semibold mt-6 inline-block">Kembali ke Beranda</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-md mt-8 p-4">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-600">&copy; 2024 . All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
